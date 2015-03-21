@@ -38,7 +38,7 @@ The activity ID:s are replaced by the activity names that is read from the "acti
 The kept measurement-variables are named according to the "features.txt"-file.
 
 ## Variables
-The variables are self-explanatory.
+The variables are self-explanatory. All measurement variables are normalized and have values ranging from -1 to 1.
 
 ### Group by-variables
 activity

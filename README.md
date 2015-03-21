@@ -8,7 +8,7 @@ There is only one script "run_analysis.R" which is divided into 5-sections accor
 You can either uncomment the code in the header to download and unzip the data that is being used or move the unzipped data to the specified folder.
 
 # Library dependencies
-"run_analysis" use the packages "reshape2" and "data.table" both available from CRAN.
+"run_analysis" uses the packages "reshape2" and "data.table" both available from CRAN.
 
 # Run_analysis
 1. The script first reads the data from the test and train data-folders and thereafter combines this data into one dataset.

@@ -1,10 +1,9 @@
-# If this file was not opened using the project file, please set the working 
-# directory. 
+# Please set the working directory. 
 # setwd("..../project_coursera")
 
-# Please put the extracted files from th "UCI HAR Dataset" in the folder
-# "/data/UCI HAR Dataset or uncomment and run the code below to download and unzip 
-# the data
+# Please put the extracted files from the "UCI HAR Dataset" in the folder
+# "/data/UCI HAR Dataset 
+# or uncomment and run the code below to download and unzip the data
 
 # # Create data directory
 # if( !file.exists("data") ){
@@ -152,5 +151,7 @@ dataLong <- melt(dataDT, id=c("activity", "subject_ID"), measure.vars=NewMeasure
 # compute the mean by of each variable grouped by activty and subject
 result <- dataLong[, mean(value), by=c("activity", "subject_ID", "variable")]
 
+setnames(result, "V1", "mean")
+
 # write the final dataset
-#write.table(result, file="./data/result.txt", row.name=FALSE)
+write.table(result, file="./data/result.txt", row.names=FALSE)
