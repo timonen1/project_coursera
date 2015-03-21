@@ -154,4 +154,4 @@ result <- dataLong[, mean(value), by=c("activity", "subject_ID", "variable")]
 setnames(result, "V1", "mean")
 
 # write the final dataset
-write.table(result, file="./data/result.txt", row.names=FALSE)
+#write.table(result, file="./data/result.txt", row.names=FALSE)
